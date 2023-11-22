@@ -21,8 +21,25 @@ let message = "'I find that the hardest I work,the more luck I seems to have.'";
 console.log(`${FamousPerson} ${message}`);
 // Question mo 06
 let boyName = "\t   Mohammad Shahzaib   \n";
-// For Name with whitespaces
+//. For Name with whitespaces
 console.log("This name is with whitespaces:", boyName);
-// For Name without Whitespaces 
+//. For Name without Whitespaces 
 let strippedName = boyName.trim();
 console.log("This is strippedName:", strippedName);
+// Question no 07
+// For Multiplication  
+let d = 2;
+let e = 4;
+console.log(d * e);
+// or division 
+let f = 16;
+let g = 2;
+console.log(f / g);
+// for Addition 
+let h = 4;
+let i = 4;
+console.log(i + h);
+// for Substraction 
+let j = 8;
+let k = 16;
+console.log(k - j);
