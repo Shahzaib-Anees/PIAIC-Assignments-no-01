@@ -1,8 +1,7 @@
 // Question # 02
 let personMessage = "Steward Edison";
 let myMessage="Are you free today?"
-console.log(`Hello ${personMessage}!
- ${myMessage} `)
+console.log(`Hello ${personMessage}!${myMessage} `)
 
  //  Question # 03
 let a="Ayyan";
