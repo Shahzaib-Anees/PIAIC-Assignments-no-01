@@ -19,3 +19,10 @@ console.log(`${aFamousPerson} says,"The Future belongs to those who believes in 
 let FamousPerson = "'Thomas Jefferson' says;";
 let message = "'I find that the hardest I work,the more luck I seems to have.'";
 console.log(`${FamousPerson} ${message}`);
+// Question mo 06
+let boyName = "\t   Mohammad Shahzaib   \n";
+// For Name with whitespaces
+console.log("This name is with whitespaces:", boyName);
+// For Name without Whitespaces 
+let strippedName = boyName.trim();
+console.log("This is strippedName:", strippedName);
