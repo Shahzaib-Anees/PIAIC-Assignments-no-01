@@ -50,3 +50,17 @@ console.log(i+h);
 let j=8;
 let k=16;
 console.log(k-j);
+
+
+// Question 08 
+console.log(4+4);
+console.log(2+6);
+console.log(1+7);
+console.log(3+5);
+console.log(8+0);
+
+// Question no 09
+let myFavoriteNumber = 7;
+let aMessage='My Favorite Number is';
+    console.log(aMessage,myFavoriteNumber)
+
