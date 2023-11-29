@@ -52,3 +52,17 @@ console.log(8 + 0);
 let myFavoriteNumber = 7;
 let aMessage = 'My Favorite Number is';
 console.log(aMessage, myFavoriteNumber);
+// Question no 10 
+// Storing string in a variable and print it in console 
+let AmericanCity = "'Chicago'";
+console.log(`${AmericanCity} is the city of America`);
+// Using Condition of TypeScript 
+// in this we use typescript's conditions if else and print the output in console
+let myMonthlySavings = 5000;
+let ShirtPrices = 1200;
+if (myMonthlySavings >= ShirtPrices) {
+    console.log("In your Budget");
+}
+else {
+    console.log("You can't afford");
+}
