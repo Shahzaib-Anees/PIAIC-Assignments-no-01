@@ -1,3 +1,6 @@
+// Question no 01
+// Already done in class 
+
 // Question # 02
 let personMessage = "Steward Edison";
 let myMessage="Are you free today?"
