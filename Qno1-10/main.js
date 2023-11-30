@@ -1,16 +1,19 @@
 "use strict";
+// Question no 01
+// Already done in class 
 // Question # 02
 let personMessage = "Steward Edison";
 let myMessage = "Are you free today?";
 console.log(`Hello ${personMessage}!${myMessage} `);
 //  Question # 03
-let a = "Ayyan";
+let a = "ayyan";
 // For LowerCase
 console.log(a.toLowerCase());
 // For Uppercase 
 console.log(a.toUpperCase());
 // for titlecase
-console.log(a);
+let titlecaseName = a.charAt(0).toUpperCase() + a.slice(1).toLowerCase();
+console.log(titlecaseName);
 // Question no 04
 let aFamousPerson = "Eleanor Rooseveit";
 console.log(`${aFamousPerson} says,"The Future belongs to those who believes in the beauty of their dreams."`);
