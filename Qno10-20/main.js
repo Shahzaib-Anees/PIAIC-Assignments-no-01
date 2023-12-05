@@ -37,7 +37,7 @@ myFavouriteTransportation.map((items) => (console.log(`I would like to Own a ${i
 // Question no 14 
 // Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner 
 let guests = [
-    "Sir Hamza Khan", "Alveena", "Sir Nabeel Khan"
+    "Sir Hamza Syed", "Alveena", "Sir Nabeel Khan"
 ];
 guests.map((invite) => (console.log(`${invite} "You are invited to a dinner wih us tonight . Your presence will be prosperous for us" `)));
 // Question no 15
@@ -62,9 +62,36 @@ let middleGuest = "Mohammad Ayyan";
 let middleGuestIndex = guests.length / 2;
 guests.splice(middleGuestIndex, 0, middleGuest);
 // console.log(guests);
-//  Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list. 
+// • Add one new guest to the beginning of your array. 
 let beginGuest = guests.unshift("Sawera");
 // console.log(guests);
 guests.map((invitations) => (console.log(`${invitations}!Can you join us tonight at a dinner table?
  I have found a bigger table and arrange it for a little gathering`)));
 // Question no 17 
+// Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests. 
+let confirmGuests = guests.slice(0, 2);
+console.log("Final Guest list", confirmGuests);
+// console.log(guests);
+// Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.  
+confirmGuests.map((invitations) => (console.log(`${invitations}!Can you join us on a dinner table tonight?
+    I can invite only two persons.`)));
+//    • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print a message to that person letting them know you’re sorry you can’t invite them to dinner 
+// console.log("Original Guest list",guests);
+let firstPoppedGuest = guests.pop();
+console.log(`${firstPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+let secondPoppedGuest = guests.pop();
+console.log(`${secondPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+let thirdPoppedGuest = guests.pop();
+console.log(`${thirdPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+let fourthPoppedGuest = guests.pop();
+console.log(`${fourthPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+let FifthPoppedGuest = guests.pop();
+console.log(`${FifthPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+let sixthPoppedGuest = guests.pop();
+console.log(`${sixthPoppedGuest}!I am really sorry to cancel your invitation but I can only invites two peoples that's why I have to cancel your invitation`);
+// • Print a message to each of the two people still on your list, letting them know they’re still invited. 
+guests.map((FinalInvitation) => (console.log(`${FinalInvitation}!You are still invited to a dinner tonight.Hope so,you will accept and join us`)));
+// • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program. 
+guests.pop();
+guests.pop();
+console.log(guests);
