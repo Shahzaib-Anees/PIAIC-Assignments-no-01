@@ -41,7 +41,7 @@ myFavouriteTransportation.map((items) => (
 
 // Question no 14 
 // Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to invite to dinner. Then use your list to print a message to each person, inviting them to dinner 
-let guests: string[] = [
+let guests = [
     "Sir Hamza Khan", "Alveena", "Sir Nabeel Khan"
 ]
 guests.map((invite) => (
@@ -53,9 +53,44 @@ guests.map((invite) => (
 // Changing Guest List: You just heard that one of your guests can’t make the dinner, so you need to send out a new set of invitations. You’ll have to think of someone else to invite.
 // Considering the above guest list.
 //  Sir Nabeel Khan can't make to us for a dinner.That's why we have to invite other guest.
-guests.pop();
+
+let PoppedArray = guests.pop();
 guests.push("Sir Imran");
 guests.map((invite) => (
-    console.log(`${invite} "You are invited to a dinner wih us tonight . Your presence will be prosperous for us" `)
+    console.log(`${invite}! "Can you join us on a dinner tonight?" `)
 ));
-console.log(guests.push());
+
+// • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+
+// For Printing the name of Popped Guest 
+console.log(PoppedArray);
+
+
+// • Print a second set of invitation messages, one for each person who is still in your list.
+
+// Question no 16 
+// More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner. 
+let newGuests = guests.push("Saad Ahmed", "Abhishai Nishat", "Mohsin Ghori")
+
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table 
+guests.map((invite) => (
+    console.log(`${invite}! "Can you join us on a dinner tonight? I have Found a bigger dinner table" `)
+));
+
+// • Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+let middleGuest:string="Mohammad Ayyan";
+
+let middleGuestIndex=guests.length/2;
+guests.splice(middleGuestIndex,0,middleGuest);
+// console.log(guests);
+
+//  Add one new guest to the middle of your array. • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list. 
+let beginGuest=guests.unshift("Sawera");
+// console.log(guests);
+guests.map((invitations)=>(
+ console.log(`${invitations}!Can you join us tonight at a dinner table?
+ I have found a bigger table and arrange it for a little gathering`)
+));
+
+// Question no 17 
+
