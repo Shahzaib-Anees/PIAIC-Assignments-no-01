@@ -55,7 +55,6 @@ guests.map((invite) => (
 //  Sir Nabeel Khan can't make to us for a dinner.That's why we have to invite other guest.
 
 let PoppedArray = guests.pop();
-guests.push("Sir Imran");
 
 // • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 guests.push("Sir Imran");
