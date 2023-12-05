@@ -46,8 +46,9 @@ guests.map((invite) => (console.log(`${invite} "You are invited to a dinner wih 
 //  Sir Nabeel Khan can't make to us for a dinner.That's why we have to invite other guest.
 let PoppedArray = guests.pop();
 guests.push("Sir Imran");
-guests.map((invite) => (console.log(`${invite}! "Can you join us on a dinner tonight?" `)));
 // • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
+guests.push("Sir Imran");
+guests.map((invite) => (console.log(`${invite}! "Can you join us on a dinner tonight?" `)));
 // For Printing the name of Popped Guest 
 console.log(PoppedArray);
 // • Print a second set of invitation messages, one for each person who is still in your list.
