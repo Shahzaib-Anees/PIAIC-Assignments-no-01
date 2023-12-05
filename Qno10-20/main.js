@@ -53,7 +53,6 @@ guests.map((invite) => (console.log(`${invite}! "Can you join us on a dinner ton
 // • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it. 
 // For Printing the name of Popped Guest 
 console.log(PoppedArray);
-// • Print a second set of invitation messages, one for each person who is still in your list.
 // Question no 16 
 // More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner. 
 let newGuests = guests.push("Saad Ahmed", "Abhishai Nishat", "Mohsin Ghori");

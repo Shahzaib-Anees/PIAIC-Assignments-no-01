@@ -69,8 +69,6 @@ guests.map((invite) => (
 console.log(PoppedArray);
 
 
-// • Print a second set of invitation messages, one for each person who is still in your list.
-
 // Question no 16 
 // More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner. 
 let newGuests = guests.push("Saad Ahmed", "Abhishai Nishat", "Mohsin Ghori")
