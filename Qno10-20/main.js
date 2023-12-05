@@ -48,7 +48,9 @@ let PoppedArray = guests.pop();
 guests.push("Sir Imran");
 // • Modify your list, replacing the name of the guest who can’t make it with the name of the new person you are inviting.
 guests.push("Sir Imran");
+// • Print a second set of invitation messages, one for each person who is still in your list. 
 guests.map((invite) => (console.log(`${invite}! "Can you join us on a dinner tonight?" `)));
+// • Start with your program from Exercise 14. Add a print statement at the end of your program stating the name of the guest who can’t make it. 
 // For Printing the name of Popped Guest 
 console.log(PoppedArray);
 // • Print a second set of invitation messages, one for each person who is still in your list.
