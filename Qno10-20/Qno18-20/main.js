@@ -7,8 +7,10 @@ let places = [
 // As the above array is not in alphabetic order
 console.log("Original Array", places);
 // For arranging array in alphabetic order 
-console.log(places.sort());
+let sortedArray = places.sort();
+console.log("Sorted Array", sortedArray);
 //As the still in itd original state
-// console.log(places);
+console.log("Original Array", places);
 // For Printing Array in reverse Alphabetic order 
-console.log(places.reverse());
+let reversedArray = sortedArray.reverse();
+console.log("Reversed Array", reversedArray);

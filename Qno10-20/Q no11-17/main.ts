@@ -97,7 +97,7 @@ guests.map((invitations) => (
 let confirmGuests = guests.slice(0, 2);
 console.log("Final Guest list", confirmGuests);
 // console.log(guests);
-// Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.  
+// Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner. 
 confirmGuests.map((invitations) => (
     console.log(`${invitations}!Can you join us on a dinner table tonight?
     I can invite only two persons.`)
@@ -128,3 +128,7 @@ guests.pop();
 guests.pop();
 console.log(guests);
 
+// Question no 19
+// Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number of people you are inviting to dinner. 
+let Arraylength=guests.length;
+console.log(Arraylength);
