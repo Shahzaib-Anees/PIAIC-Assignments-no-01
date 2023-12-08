@@ -32,3 +32,8 @@ console.log("Reversed Array", reversedArray);
 
 // Question no 20 
 // Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+
+let listOfMountains =[" K2","Mount Everest","Karakoram Mountains","Himalya Mountain Region"];
+for(let i=0;i<listOfMountains.length;i++){
+    console.log(listOfMountains[i]);
+}
