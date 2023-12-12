@@ -1,5 +1,11 @@
 "use strict";
 // question no 23
+// Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
+// let car = 'subaru';
+// console.log("Is car == 'subaru'? I predict True.")
+// console.log(car == 'subaru')
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False. 
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False. 
 let aNumber = 19;
 let otherNumber = 21;
 console.log(aNumber == otherNumber); //predict false;
@@ -24,9 +30,19 @@ console.log(cityofAmerica == "London"); //predict false
 let GermanCity = "Hamsberdge";
 GermanCity = "Berlin";
 console.log(GermanCity != "Berlin"); //perdict false
-// Quetion no 22
-let classStudent = ["Nitesh", "Rohit", "Abdul Rehman", "Ashok", "Naseer"];
-console.log(classStudent[6]);
+;
+// Question no 24
+// More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+// • Tests using the lower case function
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+// • Tests using "and" and "or" operators
+// • Test whether an item is in a array
+// • Test whether an item is not in a array
+let sweetsQuantity = 1.5;
+let reqQuantity = 2;
+console.log(sweetsQuantity >= reqQuantity); //Predict False
+let 
 // Question no 25
 // Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
@@ -59,7 +75,7 @@ console.log(classStudent[6]);
 // QUestion no 27 ;
 // Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 // • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
-let Aliens_Color = "Green";
+let, Aliens_Color = "Green";
 if (Aliens_Color == "Green") {
     console.log("This Alien has Green Color");
 }
