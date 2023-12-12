@@ -63,11 +63,32 @@ let sweetsQuantity=1.5;
 let reqQuantity=2;
 console.log(sweetsQuantity>=reqQuantity);//Predict False
 
-let 
+let cartItems =4;
+// If there is some increase in cartItems 
+cartItems=6;
+console.log(cartItems>4);//Predict true;
 
+let astudentname="Shahzaib";
+console.log(astudentname==="Shahzaib")//Predict True
 
+let carColor="Black";
+console.log(carColor!="Blue")//Predict False;
 
+let studentNumber = 43;
+let studentAge = 13 ;
+// If we require both conditions to be true
+console.log(studentNumber<40 && studentAge <12 )//Predict True
 
+let bagColor ="Brown";
+let walletColor="Black";
+console.log(bagColor=="Brown" || walletColor=="Brown")//predict true
+
+let MyCartItems:any=["Potatoes","Tomatos","Onion","Garlic","Lesson","Wheet","Rice","Red Chilli"];
+console.log(MyCartItems=="Black Chilli Powder")//Predict False
+// This means that the Black Chilli Powder is not Present in MyCartItems;
+
+console.log(MyCartItems=="Rice")//Predict True
+// This means that rice are present in MyCartItems 
 
 
 
@@ -123,34 +144,6 @@ let
 //     console.log("Sorry! You are Failed")
 //}
 
-// QUestion no 27 ;
-// Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
-// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
-let  Aliens_Color="Green";
-if(Aliens_Color=="Green"){
-    console.log("This Alien has Green Color");
-}
-
-// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
-
-else{
-    console.log("The player just earned 5 points for shooting the alien.")
-};
-
-// • Write one version of this program that runs the if block and another that runs the else block.
-// First Version 
-if(Aliens_Color=="Green"){
-    console.log("Your answer is true");
-}else{
-    console.log("Your answer is wrong")
-}
-
-// Second Version 
-if(Aliens_Color=="Blue"){
-    console.log("Your answer is true")
-}else{
-    console.log("your answer is wrong")
-};
 
 
 
