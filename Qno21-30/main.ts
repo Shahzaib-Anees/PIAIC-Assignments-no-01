@@ -1,16 +1,29 @@
 // Question no 21
-// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items
+let userProfile = {
+    FirstName: "Mohammad Shahzaib",
+    FatherName: "Mohammad Anees",
+    age: 19,
+    useremail: "shahzaibanees62",
+    password: 12345678,
 
+}
+// Program which Prints the userInformation 
+function userInfo() {
+    console.log(userProfile);
+}
+
+userInfo();
 
 
 // Question no 22 
 // Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
-let famousPlacesPakistan:string[] =[
-    "Lahore Fort","Badshahi Mosque","Mazar e Quaid","Faisal Masjid","Valley of Mohen jo Daro","Nathiagali"
+let famousPlacesPakistan: string[] = [
+    "Lahore Fort", "Badshahi Mosque", "Mazar e Quaid", "Faisal Masjid", "Valley of Mohen jo Daro", "Nathiagali"
 ]
 
-let validIndex =7;
-let mostFamous:string|undefined=famousPlacesPakistan[validIndex];
+let validIndex = 7;
+let mostFamous: string | undefined = famousPlacesPakistan[validIndex];
 console.log(mostFamous);
 
 // question no 23
