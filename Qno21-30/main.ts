@@ -1,3 +1,18 @@
+// Question no 21
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+
+
+
+// Question no 22 
+// Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+let famousPlacesPakistan:string[] =[
+    "Lahore Fort","Badshahi Mosque","Mazar e Quaid","Faisal Masjid","Valley of Mohen jo Daro","Nathiagali"
+]
+
+let validIndex =7;
+let mostFamous:string|undefined=famousPlacesPakistan[validIndex];
+console.log(mostFamous);
+
 // question no 23
 // Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 
@@ -10,39 +25,39 @@
 // • Look closely at your results, and make sure you understand why each line evaluates to True or False. 
 
 // • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False. 
-let aNumber:number=19;
-let otherNumber:number=21;
-console.log(aNumber==otherNumber);//predict false;
+let aNumber: number = 19;
+let otherNumber: number = 21;
+console.log(aNumber == otherNumber);//predict false;
 
-let personName="Syed Atif";
-console.log(personName=="Syed Atif")//predict True;
+let personName = "Syed Atif";
+console.log(personName == "Syed Atif")//predict True;
 
-let AsianCountry="Bangladesh";
-console.log(AsianCountry=="Bangladesh");//predict true;
+let AsianCountry = "Bangladesh";
+console.log(AsianCountry == "Bangladesh");//predict true;
 
-let roadLength:number=5;
-console.log(roadLength===5);//predict true
+let roadLength: number = 5;
+console.log(roadLength === 5);//predict true
 
-let age=49;
-console.log(age>40);//Perdict true
+let age = 49;
+console.log(age > 40);//Perdict true
 
-let CartPrice=20000;
-let myBudget=12000;
-console.log(CartPrice<myBudget);//predict False
+let CartPrice = 20000;
+let myBudget = 12000;
+console.log(CartPrice < myBudget);//predict False
 
-let capitalofPakistan="Islamabad";
-console.log(capitalofPakistan=="Karachi");//predict false
+let capitalofPakistan = "Islamabad";
+console.log(capitalofPakistan == "Karachi");//predict false
 
-let pricesofCar=3000000;
-console.log(pricesofCar>1000000);//predict false
+let pricesofCar = 3000000;
+console.log(pricesofCar > 1000000);//predict false
 
-let cityofAmerica ="London";
-cityofAmerica="Chicago";
-console.log(cityofAmerica=="London");//predict false
+let cityofAmerica = "London";
+cityofAmerica = "Chicago";
+console.log(cityofAmerica == "London");//predict false
 
-let GermanCity="Hamsberdge";
-GermanCity="Berlin";
-console.log(GermanCity!="Berlin");//perdict false
+let GermanCity = "Hamsberdge";
+GermanCity = "Berlin";
+console.log(GermanCity != "Berlin");//perdict false
 ;
 
 // Question no 24
@@ -59,36 +74,36 @@ console.log(GermanCity!="Berlin");//perdict false
 
 // • Test whether an item is not in a array
 
-let sweetsQuantity=1.5;
-let reqQuantity=2;
-console.log(sweetsQuantity>=reqQuantity);//Predict False
+let sweetsQuantity = 1.5;
+let reqQuantity = 2;
+console.log(sweetsQuantity >= reqQuantity);//Predict False
 
-let cartItems =4;
+let cartItems = 4;
 // If there is some increase in cartItems 
-cartItems=6;
-console.log(cartItems>4);//Predict true;
+cartItems = 6;
+console.log(cartItems > 4);//Predict true;
 
-let astudentname="Shahzaib";
-console.log(astudentname==="Shahzaib")//Predict True
+let astudentname = "Shahzaib";
+console.log(astudentname === "Shahzaib")//Predict True
 
-let carColor="Black";
-console.log(carColor!="Blue")//Predict False;
+let carColor = "Black";
+console.log(carColor != "Blue")//Predict False;
 
 let studentNumber = 43;
-let studentAge = 13 ;
+let studentAge = 13;
 // If we require both conditions to be true
-console.log(studentNumber<40 && studentAge <12 )//Predict True
+console.log(studentNumber < 40 && studentAge < 12)//Predict True
 
-let bagColor ="Brown";
-let walletColor="Black";
-console.log(bagColor=="Brown" || walletColor=="Brown")//predict true
+let bagColor = "Brown";
+let walletColor = "Black";
+console.log(bagColor == "Brown" || walletColor == "Brown")//predict true
 
-let MyCartItems:any=["Potatoes","Tomatos","Onion","Garlic","Lesson","Wheet","Rice","Red Chilli"];
-console.log(MyCartItems=="Black Chilli Powder")//Predict False
+let MyCartItems: any = ["Potatoes", "Tomatos", "Onion", "Garlic", "Lesson", "Wheet", "Rice", "Red Chilli"];
+console.log(MyCartItems == "Black Chilli Powder")//Predict False
 // This means that the Black Chilli Powder is not Present in MyCartItems;
 
-console.log(MyCartItems=="Rice")//Predict True
-// This means that rice are present in MyCartItems 
+console.log(MyCartItems == "Rice")//Predict True
+// This means that rice are present in MyCartItems
 
 
 
@@ -109,10 +124,10 @@ console.log(MyCartItems=="Rice")//Predict True
 
 
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
-// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.) 
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
 
 
-//Question no 26 
+//Question no 26
 // Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 
 // let AlienColor =  "Green";
@@ -137,7 +152,7 @@ console.log(MyCartItems=="Rice")//Predict True
 //     console.log("");
 // }
 
-// Second Version 
+// Second Version
 // if(AlienColor=="blue"){
 //     console.log("You have cleared this stage")
 // }else{

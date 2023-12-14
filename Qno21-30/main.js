@@ -1,4 +1,14 @@
 "use strict";
+// Question no 21
+// They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// Question no 22 
+// Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+let famousPlacesPakistan = [
+    "Lahore Fort", "Badshahi Mosque", "Mazar e Quaid", "Faisal Masjid", "Valley of Mohen jo Daro", "Nathiagali"
+];
+let validIndex = 7;
+let mostFamous = famousPlacesPakistan[validIndex];
+console.log(mostFamous);
 // question no 23
 // Conditional Tests: Write a series of conditional tests. Print a statement describing each test and your prediction for the results of each test. Your code should look something like this:
 // let car = 'subaru';
@@ -61,12 +71,12 @@ let MyCartItems = ["Potatoes", "Tomatos", "Onion", "Garlic", "Lesson", "Wheet", 
 console.log(MyCartItems == "Black Chilli Powder"); //Predict False
 // This means that the Black Chilli Powder is not Present in MyCartItems;
 console.log(MyCartItems == "Rice"); //Predict True
-// This means that rice are present in MyCartItems 
+// This means that rice are present in MyCartItems
 // Question no 25
 // Alien Colors #1: Imagine an alien was just shot down in a game. Create a variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
 // • Write an if statement to test whether the alien’s color is green. If it is, print a message that the player just earned 5 points.
-// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.) 
-//Question no 26 
+// • Write one version of this program that passes the if test and another that fails. (The version that fails will have no output.)
+//Question no 26
 // Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and write an if-else chain.
 // let AlienColor =  "Green";
 // // • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
@@ -85,7 +95,7 @@ console.log(MyCartItems == "Rice"); //Predict True
 // }else{
 //     console.log("");
 // }
-// Second Version 
+// Second Version
 // if(AlienColor=="blue"){
 //     console.log("You have cleared this stage")
 // }else{
