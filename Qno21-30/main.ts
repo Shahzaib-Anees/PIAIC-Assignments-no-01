@@ -211,6 +211,82 @@ else {
     console.log("The Person is an Elder")
 }
 
+// Question no 29 
+// Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+let FruitNames: string[] = [
+    "Mango", "Banana", "Pomegranate", "Pear", "Guava"
+]
+if (FruitNames.includes("Mango")) {
+    console.log("true");
+}
+if (FruitNames.includes("Pear")) {
+    console.log("true");
+}
+if (FruitNames.includes("Pomegranate")) {
+    console.log("true");
+}
+if (FruitNames.includes("Guava")) {
+    console.log("true");
+}
+
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+let favourite_fruits = ["Watermelon", "Grapes", "Mango"];
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement, such as You really like bananas!
+
+if (favourite_fruits.includes("Mango")) {
+    console.log("You really like Mango");
+} else {
+    console.log("False")
+}
+
+if (favourite_fruits.includes("Grapes")) {
+    console.log("You really like Grapes");
+} else {
+    console.log("False")
+}
+
+if (favourite_fruits.includes("Watermelon")) {
+    console.log("You really like Watermelon")
+} else {
+    console.log("False")
+}
+
+if (favourite_fruits.includes("Guava")) {
+    console.log("You really like Guava")
+} else {
+    console.log("False")
+}
+
+if (favourite_fruits.includes("Pomegranate")) {
+    console.log("You really like Pomegranate")
+} else {
+    console.log("False")
+}
+
+//Question no 30
+// Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user after they log in to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+
+let usernames = ["Admin", "M Ayyan", "M Ali", "M Anees", "M Shahzaib"]
+function greet(names: string) {
+    if (names == "Admin") {
+        console.log("Hello Admin, would you like to see a status report?")
+    }
+
+
+    // • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+
+    else if (names == "M Ali" || "M Ayyan" || "M Shahzaib") {
+        console.log(`Hello ${names}!Thank you for logging in again`)
+
+    } else {
+        console.log("Please enter correct username")
+    }
+}
+greet("M Shahzaib");
+// Question no 30
+
+
 
 
 
