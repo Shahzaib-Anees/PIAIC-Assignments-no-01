@@ -237,4 +237,3 @@ function greet(names) {
     }
 }
 greet("M Shahzaib");
-// Question no 30

@@ -284,7 +284,6 @@ function greet(names: string) {
     }
 }
 greet("M Shahzaib");
-// Question no 30
 
 
 
