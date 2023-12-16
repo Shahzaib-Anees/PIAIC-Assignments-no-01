@@ -86,6 +86,25 @@ for(let i=0;i<3;i++){
 for (let i=0;i<3;i++){
    console.log(`I really like ${myFavouritePizzas[i]}`)
 };
-
-
 // • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
+console.log("It is not wrong to say that pizza is one of my favourite meals because of its mouthwatering smell.It is so yummy,cheesy and contains vegetables also.I really like pizza");
+
+// Question no 35
+// Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
+let animals=["Horse","Camels","Mules"]
+for (let a=0;a<3;a++){
+    console.log(`${animals[a]} can be human companion because it can ease the human work by lend the hand in war,traveling a long distance etc.`)
+}
+console.log("These animals have a common workbase because of their nature and behaviour.In the old they are the mean o tranportation i.e. peoples use them for traveling and also they all are pet animals");
+
+// Queestion no 36 
+// T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function
+function make_shirt(text:string,num:number){
+    console.log(`
+    The number of this shirt is ${num}
+    The title of this shirt is ${text} `);
+}
+make_shirt("'Hold on to it,Let them overthink this'",30);
+
+// Question no 37
+// Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
