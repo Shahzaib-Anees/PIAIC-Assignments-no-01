@@ -39,3 +39,19 @@ function sandwich_items(items:string[]){
 }
 sandwich_items(["Butter","Mayo","Peanut Butter Jelly","Cream Cheese"]);
 sandwich_items(["Sliced Cooked Poultry","Tomato","Mayonaise","Lettuce"]);
+
+// Qustion no 45
+// Cars: Write a function that stores information about a car in a Object. The function should always receive a manufacturer and a model name. It should then accept an arbitrary number of keyword arguments. Call the function with the required information and two other name-value pairs, such as a color or an optional feature. Print the Object that’s returned to make sure all the information was stored correctly.
+function car_info(manufacturer:string,model_name:string,car_type:string,model?:number){
+   let car_items={
+          manufacturer:manufacturer,
+          EngineCapacity:"1800CC / 106-200HP",
+          model:model_name,
+          model_year:model,
+          car_type:car_type,
+          Prices:"1.5 million"
+   }
+   return car_items
+}
+let myCarChoice=car_info("Toyota","Hylix","SUV",2020);
+console.log(myCarChoice);
