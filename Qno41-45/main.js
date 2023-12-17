@@ -13,6 +13,7 @@ function make_greet() {
 make_greet();
 // Question no 42 
 // Unchanged Magicians: Start with your work from Exercise 40. Call the function make_great() with a copy of the array of magicians’ names. Because the original array will be unchanged, return the new array and store it in a separate array. Call show_magicians() with each array to show that you have one array of the original names and one array with the Great added to each magician’s name.
+// Continuing the show_magicians array 
 let magician_names = show_magicians;
 function make_great() {
     for (let a = 0; a < 4; a++) {
@@ -22,3 +23,12 @@ function make_great() {
 }
 make_great();
 console.log(magician_names);
+// Question no 44
+// Sandwiches: Write a function that accepts a array of items a person wants on a sandwich. The function should have one parameter that collects as many items as the function call provides, and it should print a summary of the sandwich that is being ordered. Call the function three times, using a different number of arguments each time.
+function sandwich_items(items) {
+    console.log(`
+    The Sandwhich ordered has following topping,
+    ${items}`);
+}
+sandwich_items(["Butter", "Mayo", "Peanut Butter Jelly", "Cream Cheese"]);
+sandwich_items(["Sliced Cooked Poultry", "Tomato", "Mayonaise", "Lettuce"]);
