@@ -100,11 +100,71 @@ for (let a = 0; a < 3; a++) {
 console.log("These animals have a common workbase because of their nature and behaviour.In the old they are the mean o tranportation i.e. peoples use them for traveling and also they all are pet animals");
 // Queestion no 36 
 // T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function
-function make_shirt(text, num) {
-    console.log(`
-    The number of this shirt is ${num}
-    The title of this shirt is ${text} `);
-}
-make_shirt("'Hold on to it,Let them overthink this'", 30);
+// function make_shirt(text:string,num:number){
+//     console.log(`
+//     The number of this shirt is ${num}
+//     The title of this shirt is ${text} `);
+// }
+// make_shirt("'Hold on to it,Let them overthink this'",30);
 // Question no 37
 // Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+let shirt_msg = "I love TypeScript";
+let default_size = "Large" || "medium";
+function make_shirt(size) {
+    if (size == "Large") {
+        console.log(`
+        The size of this shirt is ${size}
+        The title of this shirt is ${shirt_msg} `);
+    }
+    else if (size == "medium") {
+        console.log(`
+    The size of this shirt is ${size}
+    The title of this shirt is ${shirt_msg} `);
+    }
+    else {
+        console.log(`
+    The size of this shirt is ${size}
+    The title of this shirt is 'Hello Kids'`);
+    }
+}
+make_shirt("small");
+// Question no 38 
+// Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+let default_cities = ["Karachi", "Berlin"];
+function describe_city(city, country) {
+    if (city == "Karachi " && country == "Pakistan") {
+        console.log(`Karachi is in Pakistan`);
+    }
+    else if (city == "Berlin" && country == "Germany") {
+        console.log(`Berlin is in Germany`);
+    }
+    else
+        (console.log(`${city} is in ${country}`));
+}
+describe_city("Karachi", "Pakistan");
+describe_city("Istanbul", "Turkey");
+describe_city("Berlin", "Germany");
+// Question no 39 
+// City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+function city_country(city, country) {
+    console.log(`${city},${country}`);
+}
+// Call your function with at least three city-country pairs, and print the value that’s returned.
+city_country("Karachi", "Pakistan");
+city_country("Frankfurt", "Germany");
+city_country("Dhaka", "Bangladesh");
+// Question no 40 
+// Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+function make_album(artist, album_title, tracks) {
+    let album = {
+        artist: artist,
+        album_title: album_title,
+        tracks: tracks
+    };
+    return album;
+}
+;
+let Atifaslam = make_album("Atif Aslam", "Jal Pari");
+let eminem = make_album("Eminem", "Recovery", 3);
+console.log(Atifaslam);
+console.log(eminem);

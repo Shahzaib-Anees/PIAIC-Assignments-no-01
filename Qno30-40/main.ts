@@ -59,52 +59,119 @@ for (let a = 0; a < 1; a++) {
 // Question no 33 
 // Ordinal Numbers: Ordinal numbers indicate their position in a array, such as 1st or 2nd. Most ordinal numbers end in th, except 1, 2, and 3.
 // • Store the numbers 1 through 9 in a array.
-let num=[1,2,3,4,5,6,7,8,9];
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // • Loop through the array.
 // • Use an if-else chain inside the loop to print the proper ordinal ending for each number. Your output should read "1st 2nd 3rd 4th 5th 6th 7th 8th 9th", and each result should be on a separate line.
-for(let nums of num){
-   let ordinal:string;
-   if(nums===1){
-    ordinal="st";
-   }else if(nums==2){
-    ordinal="nd";
-   }else if(nums==3){
-    ordinal="rd";
-   }else{
-    ordinal="th";
-   } 
-   console.log(`${nums}${ordinal}`); 
+for (let nums of num) {
+    let ordinal: string;
+    if (nums === 1) {
+        ordinal = "st";
+    } else if (nums == 2) {
+        ordinal = "nd";
+    } else if (nums == 3) {
+        ordinal = "rd";
+    } else {
+        ordinal = "th";
+    }
+    console.log(`${nums}${ordinal}`);
 }
 
 // Question no 34
 // Pizzas: Think of at least three kinds of your favorite pizza. Store these pizza names in a array, and then use a for loop to print the name of each pizza.
-let myFavouritePizzas=["Turkish Kabab Pizza","Tikka Faggita Pizza","Cheese Pizza"]
+let myFavouritePizzas = ["Turkish Kabab Pizza", "Tikka Faggita Pizza", "Cheese Pizza"]
 // • Modify your for loop to print a sentence using the name of the pizza instead of printing just the name of the pizza. For each pizza you should have one line of output containing a simple statement like I like pepperoni pizza.
-for(let i=0;i<3;i++){
-  console.log(myFavouritePizzas[i]);
+for (let i = 0; i < 3; i++) {
+    console.log(myFavouritePizzas[i]);
 }
-for (let i=0;i<3;i++){
-   console.log(`I really like ${myFavouritePizzas[i]}`)
+for (let i = 0; i < 3; i++) {
+    console.log(`I really like ${myFavouritePizzas[i]}`)
 };
 // • Add a line at the end of your program, outside the for loop, that states how much you like pizza. The output should consist of three or more lines about the kinds of pizza you like and then an additional sentence, such as I really love pizza!
 console.log("It is not wrong to say that pizza is one of my favourite meals because of its mouthwatering smell.It is so yummy,cheesy and contains vegetables also.I really like pizza");
 
 // Question no 35
 // Animals: Think of at least three different animals that have a common characteristic. Store the names of these animals in a list, and then use a for loop to print out the name of each animal. • Modify your program to print a statement about each animal, such as A dog would make a great pet. • Add a line at the end of your program stating what these animals have in common. You could print a sentence such as Any of these animals would make a great pet!
-let animals=["Horse","Camels","Mules"]
-for (let a=0;a<3;a++){
+let animals = ["Horse", "Camels", "Mules"]
+for (let a = 0; a < 3; a++) {
     console.log(`${animals[a]} can be human companion because it can ease the human work by lend the hand in war,traveling a long distance etc.`)
 }
 console.log("These animals have a common workbase because of their nature and behaviour.In the old they are the mean o tranportation i.e. peoples use them for traveling and also they all are pet animals");
 
 // Queestion no 36 
 // T-Shirt: Write a function called make_shirt() that accepts a size and the text of a message that should be printed on the shirt. The function should print a sentence summarizing the size of the shirt and the message printed on it. Call the function
-function make_shirt(text:string,num:number){
-    console.log(`
-    The number of this shirt is ${num}
-    The title of this shirt is ${text} `);
-}
-make_shirt("'Hold on to it,Let them overthink this'",30);
+// function make_shirt(text:string,num:number){
+//     console.log(`
+//     The number of this shirt is ${num}
+//     The title of this shirt is ${text} `);
+// }
+// make_shirt("'Hold on to it,Let them overthink this'",30);
 
 // Question no 37
 // Large Shirts: Modify the make_shirt() function so that shirts are large by default with a message that reads I love TypeScript. Make a large shirt and a medium shirt with the default message, and a shirt of any size with a different message.
+let shirt_msg = "I love TypeScript";
+let default_size = "Large" || "medium";
+function make_shirt(size: string) {
+    if (size == "Large") {
+        console.log(`
+        The size of this shirt is ${size}
+        The title of this shirt is ${shirt_msg} `);
+    }
+    else if (size == "medium") {
+        console.log(`
+    The size of this shirt is ${size}
+    The title of this shirt is ${shirt_msg} `);
+    }
+    else {
+        console.log(`
+    The size of this shirt is ${size}
+    The title of this shirt is 'Hello Kids'`);
+    }
+}
+
+make_shirt("small");
+
+
+// Question no 38 
+// Cities: Write a function called describe_city() that accepts the name of a city and its country. The function should print a simple sentence, such as Karachi is in Pakistan. Give the parameter for the country a default value. Call your function for three different cities, at least one of which is not in the default country.
+let default_cities = ["Karachi", "Berlin"]
+function describe_city(city: string, country: string) {
+    if (city == "Karachi " && country == "Pakistan") {
+        console.log(`Karachi is in Pakistan`)
+    } else if (city == "Berlin" && country == "Germany") {
+        console.log(`Berlin is in Germany`)
+    } else (
+        console.log(`${city} is in ${country}`)
+    )
+}
+
+describe_city("Karachi", "Pakistan");
+describe_city("Istanbul", "Turkey");
+describe_city("Berlin", "Germany"); 
+
+
+
+// Question no 39 
+// City Names: Write a function called city_country() that takes in the name of a city and its country. The function should return a string formatted like this:
+function city_country(city:string,country:string){
+    console.log(`${city},${country}`)
+}
+// Call your function with at least three city-country pairs, and print the value that’s returned.
+city_country("Karachi","Pakistan");
+city_country("Frankfurt","Germany");
+city_country("Dhaka","Bangladesh");
+
+// Question no 40 
+// Album: Write a function called make_album() that builds a Object describing a music album. The function should take in an artist name and an album title, and it should return a Object containing these two pieces of information. Use the function to make three dictionaries representing different albums. Print each return value to show that Objects are storing the album information correctly. Add an optional parameter to make_album() that allows you to store the number of tracks on an album. If the calling line includes a value for the number of tracks, add that value to the album’s Object. Make at least one new function call that includes the number of tracks on an album.
+function make_album(artist:string,album_title:string,tracks?:number){
+    let album = {
+        artist: artist,
+        album_title: album_title,
+        tracks: tracks
+    }
+   return album
+};
+let Atifaslam =make_album("Atif Aslam" ,"Jal Pari");
+let eminem =make_album("Eminem","Recovery",3);
+console.log(Atifaslam);
+console.log(eminem);
+
